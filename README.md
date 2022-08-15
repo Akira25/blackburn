@@ -2,6 +2,10 @@
 
 Blackburn is a clear and responsive theme for [Hugo](//gohugo.io).
 
+## Adjustments
+
+This fork has some minor adjustments of the original theme. It's tweaked into using local assets only. The resulting website won't load additional fonts, javascript or css from a cdn. This increases loading speed a lot and improves privacy, as cloudflare, google and others don't see visitors postloading additional stuff anymore.
+
 ## Overview
 
 * Based on Yahoo's [Pure CSS](http://purecss.io/) (v1.0.0)
@@ -175,12 +179,12 @@ paginate = 10
 
 
 ## [Add hugo contact form](https://fabform.io/a/hugo-contact-form)
- 
+
   ```
  <form action="https://fabform.io/f/{form-id}" method="post">
   <label for="email">Your Email</label>
   <input name="email" type="email">
-  <button type="submit">Submit</button> 
+  <button type="submit">Submit</button>
  </form>
 ```
 
